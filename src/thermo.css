@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+
+/* Style the search field */
+.name input[type=text] {
+  padding: 10px;
+  border: 1px solid grey;
+  width: 100%;
+  background: #f1f1f1;
+  border-right: none;
+}
+
+.name input[type=image] {
+  padding: 8px;
+  border: 1px solid grey;
+  float: left;
+  height: 47.5px;
+  background: #f1f1f1;
+  border-right: none;
+}
+
+.no-border input[type=text] {
+  border: none;
+}
+
+.border-left input {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.border-right {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.border-right input[type=text], .border-right button, .border-right input[type=checkbox] {
+  border-right: 1px solid grey;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.relay {
+  border-right: 1px solid grey;
+}
+
+.check {
+  padding: 10px;
+  border: 1px solid grey;
+  width: 100%;
+  background: #f1f1f1;
+  border-left: none;
+  user-select: none;
+}
+
+/* Style the submit button */
+.name button {
+  padding: 10px;
+  width: 100%;
+  color: #2196F3;
+  border: 1px solid #2196F3;
+  /* Prevent double borders */
+  cursor: pointer;
+
+}
+
+.name button:hover {
+  background: #0b7dda;
+}
+
+
+
+
+
+
+
+.black input[type="text"]:disabled {
+  color: black;
+}
+
+.slider {
+  padding: 10px;
+  background: #f1f1f1;
+  border: 1px solid grey;
+  border-right: none;
+}
+
+.slider input[type="range"]{
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  height: 5px;
+  width: 100%;
+  background: gray;
+  border: none;
+  outline: none;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  width: 20px;
+  height: 20px;
+  background: #2196F3;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #2196F3;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb:hover {
+  background: black;
+}
+
+.slider input[type="range"]::-moz-range-thumb:hover {
+  background: black;
+}
+
+.select select {
+	border: 1px solid grey;
+	background: #f1f1f1;
+	padding-left: 10px;
+	height: 44.5px;
+}
+
+.toggle {
+	border: 1px solid grey;
+	border-right: none;
+	padding: 4.25px;
+	padding-left: 10px;
+}
+
+
+
+.thermometer {
+  background: url(../public/thermometer.png) no-repeat;
+  background-size: contain;
+  background-position: calc(0% + 10px);
+}
+
+.relay {
+  background: url(../public/valve2.png) no-repeat;
+  background-size: contain;
+  background-position: calc(0% + 10px);
+}
+
+/* .fermenter {
+  background: url(../public/fermentation2.png) no-repeat;
+  background-size: contain;
+  background-position: calc(0% + 10px);
+}
+
+.fermenterCold {
+  background: url(../public/fermentation4.png) no-repeat;
+  background-size: contain;
+  background-position: calc(0% + 10px);
+} */
+
+.cold {
+  width: 30px;
+}
+
+
+.test { 
+  position: absolute;
+  margin: 15px;
+  width: 72px;
+  /* animation: pulse 4s infinite; */
+}
+
+.test2 {
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 20px;
+  width: 20px;
+}
+
+.test3 {
+  position: absolute;
+  margin-left: 6px;
+  margin-top: 20px;
+  width: 20px;
+  animation: pulse 2s infinite;
+}
+
+.fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+ /* Style the button that is used to open and close the collapsible content */
+ .collapsible {
+  background-color: #eee;
+  /*background: url(../public/thermometer.png) no-repeat;
+  background-size: contain;*/
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  padding-left: 100px;
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid black;
+  text-align: left;
+  outline: none;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  max-height: 00;
+  transition: max-height 0.2s ease-out;
+  border: 1px solid black;
+} 
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  /*border: 1px solid grey;
+  margin: 10px;
+  padding: 10px;*/
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.sliderButt {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.sliderButt:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .sliderButt {
+  background-color: #2196F3;
+}
+
+input:focus + .sliderButt {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .sliderButt:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.sliderButt.round {
+  border-radius: 34px;
+}
+
+.sliderButt.round:before {
+  border-radius: 50%;
+} 

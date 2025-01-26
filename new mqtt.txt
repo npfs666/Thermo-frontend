@@ -1,0 +1,37 @@
+
+slave/elements
+
+[
+  {
+    "regulation": false,
+    "consigne": 15,
+    "nomCommun": " ",
+    "dateDebut": "Jan 1, 1970, 1:00:00 AM",
+    "id": 0,
+    "type": 1,
+    "ds2413": {
+      "pioA": false,
+      "pioB": false,
+      "address": [],
+      "name": "nouveau relais"
+    },
+    "ds18b20": {
+      "temp": 0,
+      "resolution": 12,
+      "offset": 0,
+      "address": [
+        40,
+        -86,
+        57,
+        70,
+        26,
+        19,
+        2,
+        54
+      ],
+      "name": "nouveau capteur"
+    }
+  }
+]
+
+slave/elements

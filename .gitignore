@@ -10,6 +10,7 @@
 
 # production
 /build
+/old_src
 
 # misc
 .DS_Store
