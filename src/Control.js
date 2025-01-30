@@ -108,11 +108,11 @@ class Control extends React.Component {
           <div key={`bloc_${listitem.id}`} className="w3-content">
             
             {/* Titre du bloc */}
-            <img className="test" src="fermentation2.png" alt=""/>
+            <img className="controlFermenter" src="fermentation2.png" alt=""/>
             {(listitem.regulation)
               ? (listitem.active)
-                  ? <img className="test2 w3-spin" src="froid2.png" alt=""/>
-                  : <img className="test2" src="froid2.png" alt=""/>
+                  ? <img className="controlColdIcon w3-spin" src="froid2.png" alt=""/>
+                  : <img className="controlColdIcon" src="froid2.png" alt=""/>
                 
               : ""}
             

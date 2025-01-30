@@ -232,7 +232,7 @@ class listOneWireElts extends React.Component {
           </div>
         ))}
 		<div className="w3-panel">
-			<textarea id="console" name="console" rows="4" cols="50" value={this.state.logConsole} readOnly />
+			<textarea id="console" name="console" rows="6" cols="100" value={this.state.logConsole} readOnly />
 		</div> 
       </div >
     );

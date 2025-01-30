@@ -3,7 +3,7 @@ import { Outlet, Link } from "react-router-dom";
 const Menu = () => {
   return (
     <>
-      <nav>
+      <nav className="menu">
         <ul>
           <li>
             <Link to="/">Liste 1-Wire</Link>

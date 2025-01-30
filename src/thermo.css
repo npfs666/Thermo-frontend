@@ -155,44 +155,23 @@
   background-position: calc(0% + 10px);
 }
 
-/* .fermenter {
-  background: url(../public/fermentation2.png) no-repeat;
-  background-size: contain;
-  background-position: calc(0% + 10px);
-}
-
-.fermenterCold {
-  background: url(../public/fermentation4.png) no-repeat;
-  background-size: contain;
-  background-position: calc(0% + 10px);
-} */
-
-.cold {
-  width: 30px;
-}
 
 
-.test { 
+
+.controlFermenter { 
   position: absolute;
   margin: 15px;
   width: 72px;
-  /* animation: pulse 4s infinite; */
 }
 
-.test2 {
+.controlColdIcon {
   position: absolute;
   margin-left: 6px;
   margin-top: 20px;
   width: 20px;
 }
 
-.test3 {
-  position: absolute;
-  margin-left: 6px;
-  margin-top: 20px;
-  width: 20px;
-  animation: pulse 2s infinite;
-}
+
 
 .fadeOut {
   visibility: hidden;
@@ -200,19 +179,29 @@
   transition: visibility 0s 2s, opacity 2s linear;
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.25);
-  }
-  100% {
-    transform: scale(1);
-  }
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 40%;
+  overflow: hidden;
+  background-color: #eee;
+  display: flex;
 }
 
+li a {
+  display: block;
+  color: #444;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
 
+li a:hover {
+  background-color: #ccc;
+}
 
 
  /* Style the button that is used to open and close the collapsible content */
