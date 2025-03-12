@@ -28,8 +28,8 @@ function App() {
 
         console.log(window.location.hostname);
         var mqttServer = "ws://176.166.18.87:9001"
-        if( (window.location.hostname === "localhost") || (window.location.hostname === "192.168.1.10") ) {
-          mqttServer = "ws://192.168.1.10:9001";
+        if( (window.location.hostname === "localhost") || (window.location.hostname === "192.168.1.13") ) {
+          mqttServer = "ws://192.168.1.13:9001";
         } 
         
         var con = mqtt.connect(mqttServer, options)
