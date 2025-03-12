@@ -24,13 +24,11 @@ function App() {
         };
         
         // A refaire pour gérer un VPN
-        //mqttServer = "ws://" + window.location.hostname + ":9001"
-
-        console.log(window.location.hostname);
-        var mqttServer = "ws://176.166.18.87:9001"
+        /*var mqttServer = "ws://176.166.18.87:9001"
         if( (window.location.hostname === "localhost") || (window.location.hostname === "192.168.1.13") ) {
           mqttServer = "ws://192.168.1.13:9001";
-        } 
+        } */
+        var mqttServer = "ws://" + window.location.hostname + ":9001";
         
         var con = mqtt.connect(mqttServer, options)
         con.on('connect', onConnectionSuccess)
