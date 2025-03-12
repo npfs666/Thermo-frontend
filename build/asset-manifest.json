@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7e5b6c05.css",
+    "main.js": "/static/js/main.ef6c3092.js",
+    "static/js/787.5feb7a49.chunk.js": "/static/js/787.5feb7a49.chunk.js",
+    "static/media/thermometer.png": "/static/media/thermometer.d6ce6f43cd98a89dbbb6.png",
+    "index.html": "/index.html",
+    "main.7e5b6c05.css.map": "/static/css/main.7e5b6c05.css.map",
+    "main.ef6c3092.js.map": "/static/js/main.ef6c3092.js.map",
+    "787.5feb7a49.chunk.js.map": "/static/js/787.5feb7a49.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e5b6c05.css",
+    "static/js/main.ef6c3092.js"
+  ]
+}
