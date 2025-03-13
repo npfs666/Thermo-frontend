@@ -59,7 +59,7 @@ function App() {
       <Route path="/" element={<Menu />}>
         <Route path="list" element={<OWElements client={client}/>} />
         <Route path="slaves" element={<Slaves client={client}/>} />
-        <Route index path="control" element={<Control client={client}/>} />
+        <Route index path="" element={<Control client={client}/>} />
       </Route>
     </Routes>
   </BrowserRouter>
