@@ -6,13 +6,13 @@ const Menu = () => {
       <nav className="menu">
         <ul>
           <li>
-            <Link to="/">Liste 1-Wire</Link>
+            <Link to="/list">Liste 1-Wire</Link>
           </li>
           <li>
             <Link to="/slaves">Modules Esclave</Link>
           </li>
           <li>
-            <Link to="/control">R&eacute;gulation</Link>
+            <Link to="/">R&eacute;gulation</Link>
           </li>
         </ul>
       </nav>
