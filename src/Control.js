@@ -54,7 +54,7 @@ class Control extends React.Component {
     
     OneWire.setControl(this.client, id, comment.value, regulation.checked, setpoint.value)
     
-    //window.location.reload(false);
+    window.location.reload(false);
   }
 
   clicRefreshTemp = e => {    

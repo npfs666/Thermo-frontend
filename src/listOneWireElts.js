@@ -86,7 +86,7 @@ class listOneWireElts extends React.Component {
       OneWire.setDS2413(this.client, address, name.value)
     }
 
-    //window.location.reload(false);
+    window.location.reload(false);
   }
 
 
