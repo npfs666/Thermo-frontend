@@ -57,10 +57,9 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Menu />}>
-        <Route index element={<Navigate replace to="/control" />} />
         <Route path="list" element={<OWElements client={client}/>} />
         <Route path="slaves" element={<Slaves client={client}/>} />
-        <Route path="control" element={<Control client={client}/>} />
+        <Route index path="control" element={<Control client={client}/>} />
       </Route>
     </Routes>
   </BrowserRouter>
