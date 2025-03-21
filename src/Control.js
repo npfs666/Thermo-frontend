@@ -120,7 +120,7 @@ class Control extends React.Component {
               className={(listitem.regulation)
                           ? "collapsible fermenterCold"
                           : "collapsible fermenter"
-              }>{listitem.name}<br />{listitem.comment}</button>
+              }>{listitem.name} - {listitem.thermometer.temp}°C<br />{listitem.comment}</button>
             <div className="content">
               
               {/* Nom // Commentaire */}

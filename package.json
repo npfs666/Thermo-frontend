@@ -8,8 +8,7 @@
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.3.0",
     "react-scripts": "^5.0.1",
-    "web-vitals": "^4.2.4",
-	"nth-check": ">=2.0.1"
+    "web-vitals": "^4.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -35,7 +34,9 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    
-  }
+  "overrides": {
+    "nth-check": ">=2.1.1",
+	"css-select": ">=5.1.0",
+	"postcss": ">=8.5.3"
+	}
 }
